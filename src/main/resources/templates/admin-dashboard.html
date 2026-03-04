@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mine Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<link rel="stylesheet" href="/css/admin.css">
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>CoalMine Admin</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Shift Reports</li>
+            <li>Gas Monitoring</li>
+            <li>Incident Reports</li>
+            <li>Workers</li>
+            <li>Analytics</li>
+            <li>Settings</li>
+            <li>Logout</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+        <div class="topbar">
+            <h1>Mine Manager Dashboard</h1>
+            <div class="profile">Admin</div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="cards">
+            <div class="card green">
+                <h3>12</h3>
+                <p>Active Shifts</p>
+            </div>
+            <div class="card red">
+                <h3>3</h3>
+                <p>Active Gas Alerts</p>
+            </div>
+            <div class="card yellow">
+                <h3>5</h3>
+                <p>Pending Approvals</p>
+            </div>
+            <div class="card blue">
+                <h3>240</h3>
+                <p>Workers Today</p>
+            </div>
+        </div>
+
+        <!-- Tables Section -->
+        <div class="tables">
+            <div class="panel">
+                <h3>Live Gas Alerts</h3>
+                <table>
+                    <tr>
+                        <th>Area</th>
+                        <th>Gas</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr class="danger">
+                        <td>Section A</td>
+                        <td>CH4</td>
+                        <td>2.5%</td>
+                        <td>Danger</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel">
+                <h3>Pending Shift Approvals</h3>
+                <table>
+                    <tr>
+                        <th>Shift ID</th>
+                        <th>Supervisor</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>SH-102</td>
+                        <td>Mr. Singh</td>
+                        <td><button>Approve</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>
