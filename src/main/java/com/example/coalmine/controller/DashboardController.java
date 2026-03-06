@@ -10,4 +10,19 @@ public class DashboardController {
     public String adminDashboard() {
         return "admin-dashboard";
     }
+
+    @GetMapping("/supervisor")
+    public String supervisorDashboard() {
+        return "supervisor-dashboard";
+    }
+
+    @GetMapping("/gas-officer")
+    public String gasDashboard() {
+        return "gasofficer-dashboard";
+    }
+
+    @GetMapping("/safety-officer")
+    public String safetyDashboard() {
+        return "safety-dashboard";
+    }
 }
