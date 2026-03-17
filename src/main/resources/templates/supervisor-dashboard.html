@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+<h2>Supervisor Dashboard</h2>
 
-    <title>Supervisor Dashboard</title>
-
-    <link rel="stylesheet" href="/css/admin.css">
-
-</head>
-
-<body>
-
-<h1>Supervisor Dashboard</h1>
-
-<div class="card-container">
-
-    <div class="card">
-        <h3>Submit Shift Report</h3>
-        <button onclick="openReport()">Create Report</button>
-    </div>
-
-    <div class="card">
-        <h3>View Previous Reports</h3>
-        <button onclick="viewReports()">View</button>
-    </div>
-
+<div class="card">
+    <h3>Create Shift Report</h3>
+    <button onclick="go('/supervisor/report')">Create</button>
 </div>
-
-<script src="/js/dashboard.js"></script>
-
-</body>
-</html>

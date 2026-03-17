@@ -1,14 +1,28 @@
-// Simple demo interaction
+function go(url){
+    window.location.href = url;
+}
 
-document.addEventListener("DOMContentLoaded", function(){
+async function loadDashboard(){
 
-    console.log("Admin Dashboard Loaded");
+    const data = await fetch("/api/shift-reports")
+        .then(res => res.json());
 
-});
+    document.getElementById("reports").innerText = data.length;
 
-// Example: approve shift
-function approveShift(shiftId){
+    let table = "";
 
-    alert("Shift " + shiftId + " Approved");
+    data.forEach(r => {
+        table += `
+            <tr>
+                <td>${r.mineSection}</td>
+                <td>${r.shift}</td>
+                <td>${r.supervisorName}</td>
+            </tr>
+        `;
+    });
+
+    document.getElementById("reportTable").innerHTML = table;
 
 }
+
+loadDashboard();
